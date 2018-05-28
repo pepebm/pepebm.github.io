@@ -68,6 +68,14 @@ p {
   margin-bottom: 10px;
 }
 
+.quote{
+  border: 5px black;
+  box-shadow: 4px 4px 6px #999;
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: rgb(227, 222, 227);
+}
+
 .float{
 	position:fixed;
 	width:60px;
@@ -79,6 +87,7 @@ p {
 	border-radius:50px;
 	text-align:center;
 	box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
 }
 
 .my-float{
@@ -87,6 +96,12 @@ p {
 
 @media (min-width: 991px) {
   .hidden-sm-down{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .hidden-sm-up{
     display: none;
   }
 }
