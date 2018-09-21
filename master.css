@@ -1,4 +1,10 @@
-@import 'styles/base.css';
-@import 'styles/menu.css';
-@import 'styles/scroller.css';
-@import 'styles/footer.css';
+@import 'assets/css/bootstrap.min.css';
+@import 'assets/fonts/line-icons.css';
+@import 'assets/css/slicknav.css';
+@import 'assets/css/owl.carousel.min.css';
+@import 'assets/css/owl.theme.css';
+@import 'assets/css/slick.css';
+@import 'assets/css/slick-theme.css';
+@import 'assets/css/animate.css';
+@import 'assets/css/main.css';
+@import 'assets/css/responsive.css';

@@ -1,208 +1,870 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="/scripts/parallax.min.js"></script>
-    <script src="/scripts/scroll.js"></script>
-    <script src="/scripts/base.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/master.css">
+
     <title>ER - Energías Renovables</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="master.css">
+    
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand hidden-sm-down">ER</a>
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#solution">Soluciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#features">Servicios</a>
-          </li>
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt="" class="logo"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-left clearfix">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Nosotros <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">¿Quiénes somos?</a>
+                  <a class="dropdown-item" href="#">Misión y Visión</a>
+                </div>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  Ahorra <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">¿Cómo funciona?</a>
+                  <a class="dropdown-item" href="#">Ahorra energía</a>
+                  <a class="dropdown-item" href="#">Ahorra gas</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">
+                  Garantías
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">
+                  Pasos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Testimonios
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contáctanos
+                </a>
+              </li>
+            </ul>
+            <div class="btn-sing float-right">
+              <a class="btn btn-border" href="#feature">FAQ</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Extra
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Nosotros <i class="fas fa-caret-down"></i>
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Mas</a>
-              <a class="dropdown-item" href="#">Contenido</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Hecho con <i class="fas fa-heart"></i> en México</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">¿Quiénes somos?</a>
+              <a class="dropdown-item" href="#">Misión y Visión</a>
+            </div>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Ahorra <i class="fas fa-caret-down"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">¿Cómo funciona?</a>
+              <a class="dropdown-item" href="#">Ahorra energía</a>
+              <a class="dropdown-item" href="#">Ahorra gas</a>
             </div>
           </li>
+          <li>
+            <a class="page-scroll" href="#feature">
+              Productos
+            </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#team">
+              Garantías
+            </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#testimonial">
+              Pasos
+            </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#pricing">
+              Testimonios
+            </a>
+          </li>
+          <li>
+            <a class="page-scroll" href="#contact">
+              Contáctanos
+            </a>
+          </li>
         </ul>
-      </div>
-    </nav>
-    <a href="#home" class="float hidden-sm-up">
-      <i class="fas fa-home my-float"></i>
-    </a>
-    <div class="header">
-      <div class="logo">
-        <h1>ER</h1>
-      </div>
-    </div>
+        <!-- Mobile Menu End -->
 
-    <section class="hero" id="home">
-      <div class="hero-image">
-        <div class="hero-title">
-          <h1>Energías Renovables</h1>
-          <h2>Tu electricidad en manos de expertos</h2>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <div class="contents text-center">
+                <h2 class="head-title wow fadeInUp">
+                  Aprovechar la energía solar<br> Nunca fue tan fácil
+                </h2>
+                <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
+                  <a href="#contact" class="btn btn-common">Empieza a ahorrar</a>
+                </div>
+              </div>
+              <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
+                <img class="img-fluid" src="assets/img/hero-1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">¿Qué hacemos?</h2>
+        </div>
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="lni-harddrive"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Cotización</a></h3>
+                <p>
+                  Con tu último recibo de CFE y la geolocalización de tu hogar o negocio
+                  hacemos la evaluación completa de la instalación de nuestros productos,
+                  en esta etapa analizaremos si tu casa es compatible con los paneles solares.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="lni-cog"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Instalación</a></h3>
+                <p>
+                  Nosotros proporcionamos a un equipo altamente capacitado que irá a tu casa
+                  y se encargará de cualquier cosa para que la instalación salga correcta. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-4 col-xs-12">
+            <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="lni-briefcase"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Documentos legales</a></h3>
+                <p>
+                  Se necesita hacer papeleos con la CFE para poder empezar a ahorrar, esto
+                  también lo hacemos para ti. Solo requerimos de tú autorización y listo.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+    <!-- Services Section End -->
 
-    <div class="container">
-      <div class="inner" id="solution">
-          <h1>Ayuda al planeta. Ayuda a tu fábrica.</h1>
-          <h3>Todo en un solo lugar</h3>
+    <!-- Feature Section Start -->
+    <div id="feature">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-4">
-              <div class="icon">
-                <img src="/images/industry.svg" alt="industry">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="text-wrapper">
+                <div>
+                  <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">
+                    Ahorra en el pago de energía eléctrica
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="features-box wow fadeInLeft" data-wow-delay="1.2s">
+                          <div class="features-icon">
+                            <img class="svg" alt="" src="assets/img/panel.svg"/>
+                          </div>
+                          <div class="features-content">
+                            <p>
+                              De acuerdo a tu patrón de consumo de un año, calculamos el número de paneles
+                              que requieres para que tu generación de energía sea mayor a tu consumo. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="features-icon">
+                          <img alt="" src="assets/img/sun.svg" class="svg"/>
+                        </div>
+                        <div class="features-content">
+                          <p>
+                            Durante el día, nuestros paneles absorberán la radiación solar 
+                            y la convertiran en energía que puedes utilizar.
+                          </p>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="features-icon">
+                          <i class="lni-dashboard"></i>
+                        </div>
+                        <div class="features-content">
+                          <p>
+                            La energía que no utilices se canalizará a la CFE a través de un medidor bidireccional,
+                            durante las noches estarás consumiendo energía de la CFE.
+                          </p>
+                        </div>
+                      </div>
+                    </div>           
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="features-icon">
+                            <img class="svg" alt="" src="assets/img/money.svg"/>
+                        </div>
+                        <div class="features-content">
+                          <p>
+                            La diferencia entre tu generación y tu consumo se registrará en
+                            el medidor bidireccional que nosotros proporcionamos.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
-              <h2>Introduce el sol a tu fábrica y comienza a <b>ahorrar</b></h2>
             </div>
-            <div class="col-sm-4">
-              <div class="icon">
-                <img src="/images/money.svg" alt="money">
+            <div class="col-lg-6 col-md-12 col-sm-12 padding-none">
+              <div class="feature-thumb wow fadeInRight" data-wow-delay="0.3s">
+                <img src="assets/img/feature/img-1.jpg" alt="">
               </div>
-              <h2><b>Deja de pagar</b> la energía que utilizas energía electrica pública</h2>
-            </div>
-            <div class="col-sm-4">
-              <div class="icon">
-                <img src="/images/planet.svg" alt="planet">
-              </div>
-              <h2>La única manera de <b>no parar</b> tu producción y ayudar al <b>planeta</b></h2>
             </div>
           </div>
+        </div>
       </div>
+      <!-- Feature Section End -->
 
-      <img class="q" src="/images/panel-house.jpg" />
+      <!-- Feature Section Start -->
+    <div id="feature1">
+        <div class="col-lg-6 col-md-12 col-sm-12 padding-none">
+          <div class="feature-thumb wow fadeInRight" data-wow-delay="0.3s">
+            <img src="assets/img/feature/img-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+              <div class="text-wrapper">
+                <div>
+                  <h2 class="title-hl wow fadeInLeft" data-wow-delay="0.3s">
+                    También ahorra en el pago de gas
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="features-icon">
+                         <img alt="" src="assets/img/sun.svg" class="svg"/>
+                        </div>
+                        <div class="features-content">
+                          <h4>
+                            Bootstrap 4
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint. 
+                          </p>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.6s">
+                        <div class="features-icon">
+                          <i class="lni-briefcase"></i>
+                        </div>
+                        <div class="features-content">
+                          <h4>
+                            100% Free
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>           
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="0.9s">
+                        <div class="features-icon">
+                         <i class="lni-cog"></i>
+                        </div>
+                        <div class="features-content">
+                          <h4>
+                            Responsive
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="features-box wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="features-icon">
+                          <i class="lni-leaf"></i>
+                        </div>
+                        <div class="features-content">
+                          <h4>
+                            Easy to Use
+                          </h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam tempora quidem vel sint. 
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Feature Section End -->
 
-      <div class="inner" id="features">
-        <h1>Ofrecemos todo lo necesario para verte satisfecho</h1>
+    
+
+    <!-- Team Section Start -->
+    <section id="team" class="section-padding text-center">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-4">
-            <div class="icon fix-height">
-              <img src="/images/panel.svg" alt="panel">
+          <div class="col-12">
+            <div class="section-header text-center">
+              <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
             </div>
-            <h2>Paneles solares de la mejor calidad</h2>
-            <p>Los paneles <b>transforman</b> la irradiación del sol en energía.</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <img src="/images/construction.svg" alt="construction">
-            </div>
-            <h2>Estructura de montaje</h2>
-            <p>Instalamos los paneles en <b>cualquier</b> tipo de techo.</p>
-          </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <img src="/images/recycle.svg" alt="recycle">
-            </div>
-            <h2>Microinvesor</h2>
-            <p>La energía es transformada por este aparato para ser <b>usada en casa</b>.</p>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <div class="icon">
-              <img src="/images/payback.svg" alt="payback">
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-01.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Rafael Basilla</a></h3>
+                <p>Front-end Developer, Dropbox</p>
+              </div>
             </div>
-            <h2>Medidor bidireccional</h2>
-            <p>La energía solar no utilizada en casa se <b>contabiliza a favor</b> del propretario con CFE.</p>
+            <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <img src="/images/connect.svg" alt="connect">
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-02.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Renee Fleck</a></h3>
+                <p>Product Designer, Tesla</p>
+              </div>
             </div>
-            <h2>Conexión con CFE</h2>
-            <p>Nos encargamos de instalar el sistema con CFE por si algun dia <b>necesitas más energía</b> de la que produces.</p>
+            <!-- Team Item Ends -->
           </div>
-          <div class="col-sm-4">
-            <div class="icon">
-              <img src="/images/monitor.svg" alt="monitor">
+
+          <div class="col-sm-6 col-md-6 col-lg-4">
+            <!-- Team Item Starts -->
+            <div class="team-item text-center">
+              <div class="team-img">
+                <img class="img-fluid" src="assets/img/team/team-03.jpg" alt="">
+                <div class="team-overlay">
+                  <div class="overlay-social-icon text-center">
+                    <ul class="social-icons">
+                      <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="info-text">
+                <h3><a href="#">Paul Kowalsy</a></h3>
+                <p>Lead Designer, TNW</p>
+              </div>
             </div>
-            <h2>Monitorea tu consumo</h2>
-            <p>Conectate a nuestas aplicaciones <b>desde donde estes</b> y monitorea todo el consumo de tu sistema.</p>
+            <!-- Team Item Ends -->
           </div>
+          
         </div>
       </div>
+    </section>
+    <!-- Team Section End -->
 
-      <img class="q" src="http://artskidesign.com/archive/wp-content/uploads/2016/09/bg-fade-out-2.jpg" />
-
-      <div class="inner quote">
-        <h1 style="display:inline;">Todos nuestros clientes </h1>
-        <h2 style="display:inline;">
-          están satisfechos sabiendo que cada día disfrutan de instalaciones
-          seguras y garantizadas respaldadas en todo momento de un equipo de
-          <b>profesionales</b>. &#x1F3C6
-        </h2>
+    <!-- Clients Section Start -->
+    <div id="clients" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">As Seen On</h2>
+        </div>
+        <div class="row text-align-">
+          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="client-item-wrapper">
+              <img class="img-fluid" src="assets/img/clients/img1.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="client-item-wrapper">
+              <img class="img-fluid" src="assets/img/clients/img2.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="0.9s">
+            <div class="client-item-wrapper">
+              <img class="img-fluid" src="assets/img/clients/img3.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
+            <div class="client-item-wrapper">
+              <img class="img-fluid"  src="assets/img/clients/img4.png" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- Clients Section End -->
 
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3>Company<span>logo</span></h3>
-        <p class="footer-links">
-          <a href="#">Home</a>
-          <a href="#">Blog</a>
-          <a href="#">Pricing</a>
-          <a href="#">About</a>
-          <a href="#">Faq</a>
-          <a href="#">Contact</a>
-        </p>
-        <p class="footer-company-name">Company Name &copy; 2015</p>
+    <!-- Testimonial Section Start -->
+    <section id="testimonial" class="testimonial section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+            <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content">
+                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  </div>
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img1.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Grenchen Pearce</a></h2>
+                    <h3><a href="#">Boston Brothers co.</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content">
+                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  </div>
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img2.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Domeni GEsson</a></h2>
+                    <h3><a href="#">Awesome Technology co.</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content">
+                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  </div>
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img3.jpg" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Dommini Albert</a></h2>
+                    <h3><a href="#">Nesnal Design co.</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content">
+                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  </div>
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img4.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Fernanda Anaya</a></h2>
+                    <h3><a href="#">Developer</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content">
+                    <p class="description">Holisticly empower leveraged ROI whereas effective web-readiness. Completely enable emerging meta-services with cross-platform web services. Quickly initiate inexpensive total linkage rather than extensible scenarios. Holisticly empower leveraged ROI whereas effective web-readiness. </p>
+                  </div>
+                  <div class="img-thumb">
+                    <img src="assets/img/testimonial/img5.png" alt="">
+                  </div>
+                  <div class="info">
+                    <h2><a href="#">Jason A.</a></h2>
+                    <h3><a href="#">Designer</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <!-- Testimonial Section End -->  
 
-      <div class="footer-center">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>Plaza Juárez, Lerma</span> Estado de Méxixo, México</p>
-        </div>
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+1 555 123456</p>
-        </div>
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">support@company.com</a></p>
+    <!-- Pricing section Start --> 
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="table wow fadeInLeft" data-wow-delay="1.2s">
+              <div class="title">
+                <h3>Basic</h3>
+              </div>
+              <div class="pricing-header">
+                <p class="price-value">$12.90<span>/ Month</span></p>
+              </div>
+              <ul class="description">
+                <li>Up to 5 projects </li>
+                <li>Up to 10 collabrators</li>
+                <li>2gb of storage</li>
+              </ul>
+              <button class="btn btn-common">Get It</button>
+            </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12 active">
+            <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
+              <div class="title">
+                <h3>Profesional</h3>
+              </div>
+               <div class="pricing-header">
+                  <p class="price-value">$49.90<span>/ Month</span></p>
+               </div>
+              <ul class="description">   
+                <li>Up to 10 projects</li>
+                <li>Up to 20 collabrators</li>
+                <li>10gb of storage</li>
+                <li>Real-time collabration</li>
+              </ul>
+              <button class="btn btn-common">Get It</button>
+           </div> 
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="table wow fadeInRight" data-wow-delay="1.2s">
+              <div class="title">
+                <h3>Expert</h3>
+              </div>
+               <div class="pricing-header">
+                  <p class="price-value">$89.90<span>/ Month</span></p>
+               </div>
+              <ul class="description">
+                <li>unlimited projects </li>
+                <li>Unlimited collabrators</li>
+                <li>Unlimited of storage</li>
+                <li>Real-time collabration</li>
+                <li>24x7 Support</li>
+              </ul>
+              <button class="btn btn-common">Get It</button>
+            </div> 
+          </div>
         </div>
       </div>
+    </section>
+    <!-- Pricing Table Section End -->
 
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About the company</span>
-          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-        </p>
-        <div class="footer-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+    <!-- Owl Slider Section Start -->
+    <section class="sloder-img section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="slider-center slider">
+              <div>
+                <img class="img-fluid" src="assets/img/slide/img1.jpg" alt="">
+              </div>
+              <div>
+                <img class="img-fluid" src="assets/img/slide/img2.jpg" alt="">
+              </div>
+              <div>
+                <img class="img-fluid" src="assets/img/slide/img3.jpg" alt="">
+              </div>
+              <div>
+                <img class="img-fluid" src="assets/img/slide/img4.jpg" alt="">
+              </div>
+              <div>
+                <img class="img-fluid" src="assets/img/slide/img5.jpg" alt="">
+              </div>
+              <div>
+                <img  class="img-fluid" src="assets/img/slide/img6.jpg" alt="">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
+    <!-- Owl Slider Section End -->  
 
-    <script type="text/javascript">
-      $( document ).ready(function() {
-        scroll();
-        initMenu();
-        console.log( "ready!" );
-      });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- Subscribe Section Start -->
+    <section id="Subscribes" class="subscribes section-padding">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-10 col-lg-5">
+            <h4 class="wow fadeInUp" data-wow-delay="0.3s">Start For Free</h4>
+            <p class="wow fadeInUp" data-wow-delay="0.6s">Existing customized ideas through client-based deliverables. <br> Compellingly unleash fully tested outsourcing</p>
+            <form for="">
+              <div class="subscribe wow fadeInDown" data-wow-delay="0.3s">
+                <input type="Email" class="form-control" name="email" placeholder="Email Address">
+                <button class="btn-submit" type="submit"><i class="lni-arrow-right"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding">    
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header text-center">
+              <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-block">
+              <h2>Contact Form</h2>
+              <form id="contactForm">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>                                 
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                    </div> 
+                  </div>
+                   <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group"> 
+                      <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button">
+                      <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                      <div class="clearfix"></div> 
+                    </div>
+                  </div>
+                </div>            
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-right-area wow fadeIn">
+              <h2>Get In Touch</h2>
+              <div class="contact-right">
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="lni-map-marker"></i>
+                  </div>
+                  <p>Skopje, Macedonia</p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="lni-envelope"></i>
+                  </div>
+                  <p><a href="#">email@gmail.com</a></p>
+                  <p><a href="#">tomsaulnier@gmail.com</a></p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="lni-phone-handset"></i>
+                  </div>
+                  <p><a href="#">+42 374 5967</a></p>
+                  <p><a href="#">+99 123 5967</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!-- Contact Section End -->
+  
+    <!-- Map Section Start -->
+    <div class="map">
+      <div class="containre-fulid">
+        <div id="conatiner-map"></div> 
+      </div>
+    </div>
+    <!-- Map Section End -->
+
+	  <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
+              <div class="footer-logo mb-3">
+                <img src="assets/img/logo.png" alt="">
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi quasi, ipsam voluptatem.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+              <h3 class="footer-titel">Company</h3>
+              <ul>
+                <li><a href="#">Press Releases</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Strategy</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+              <h3 class="footer-titel">About</h3>
+              <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Clients</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 wow fadeInUp" data-wow-delay="0.8s">
+              <h3 class="footer-titel">Find us on</h3>
+              <div class="social-icon">
+  	            <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+  	            <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+  	            <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+  	            <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>     
+    </footer> 
+    <!-- Footer Section End -->
+
+    <section id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>Copyright © 2018 UIdeck All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+      
   </body>
 </html>
