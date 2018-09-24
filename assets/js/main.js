@@ -81,7 +81,7 @@
     $('.slider-center').slick({
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 3,
+      slidesToShow: 1,
       responsive: [
         {
           breakpoint: 768,

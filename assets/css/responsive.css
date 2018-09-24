@@ -29,6 +29,10 @@
   #pricing-table .title h3 {
     font-size: 14px;
   }
+  .navbar-brand img {
+    width: 40% !important;
+    margin-top: 0;
+  }
 }
 
 /* only small tablets */
@@ -90,6 +94,7 @@
   }
   .navbar-brand img {
     margin: 5px 0;
+    width: 40% !important;
   }
   #hero-area .contents {
     padding: 100px 0px 60px 0px;
