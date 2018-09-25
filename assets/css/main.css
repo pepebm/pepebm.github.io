@@ -203,8 +203,76 @@ ul li {
   line-height: 1;
 }
 
+/* mobile or only mobile */
+@media (max-width: 767px) {
+  .step-item {
+    width: 100%;
+  }
+  .step-item-last {
+    width: 100%;
+  }
+}
+
 button:focus {
   outline: none !important;
+}
+
+#energy {
+  background-color: #f8f9fb;
+}
+
+#products {
+  background-color: #f8f9fb;
+}
+
+#story {
+  background-color: #f8f9fb;
+  padding: 40px 0;
+}
+
+#story p {
+  margin-bottom: 10px;
+}
+
+#objective {
+  padding: 40px 0;
+}
+
+#mision-vision {
+  background-color: #f8f9fb;
+  padding: 40px 0;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
 }
 
 .icon-close, .icon-check {
@@ -1381,4 +1449,36 @@ textarea {
 
 #copyright p a:hover {
   color: #137ED9;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('http://farm6.staticflickr.com/5104/5862419072_7f9632f068_b.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.about-us-hero {
+  /* The image used */
+  background-image: url('/assets/img/hero-1.jpg');
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
