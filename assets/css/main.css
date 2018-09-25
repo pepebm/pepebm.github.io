@@ -275,6 +275,14 @@ button:focus {
   border-radius: .25em;
 }
 
+.mb-0{
+  color: #137ED9;
+}
+
+.faq .card {
+  margin-bottom: 15px;
+}
+
 .icon-close, .icon-check {
   color: #137ED9;
 }

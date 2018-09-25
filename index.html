@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="description" content="Solar panel company located in Mexico City">
+    <meta name="keywords" content="Solar, sol, panel, CFE, energía, renovable, responsabilidad, ambiental">
+    <meta property="og:description" content="Solar panel company located in Mexico City">
+    <meta property="og:title" content="Energías Renovables">
+    <meta property="og:site_name" content="Energías Renovables">
+    <meta name="twitter:card" content="Solar panel company located in Mexico City">
+    <meta name="twitter:title" content="Energías Renovables">
+    <meta name="twitter:description" content="Solar panel company located in Mexico City">
     <title>ER - Energías Renovables</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="master.css">
-    
+    <link rel="shortcut icon" href="assets/img/logo.ico" />
   </head>
   <body>
 
@@ -37,8 +41,8 @@
                   Nosotros <i class="fas fa-caret-down"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="nosotros.html">¿Quiénes somos?</a>
-                  <a class="dropdown-item" href="nosotros.html">Misión y Visión</a>
+                  <a class="dropdown-item" href="nosotros.html#who-we-are">¿Quiénes somos?</a>
+                  <a class="dropdown-item" href="nosotros.html#mision-vision">Misión y Visión</a>
                 </div>
               </li> 
               <li class="nav-item dropdown">
@@ -47,28 +51,28 @@
                   Ahorra <i class="fas fa-caret-down"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html#what-we-do">¿Qué hacemos?</a>
-                  <a class="dropdown-item" href="index.html#energy">Ahorra energía</a>
-                  <a class="dropdown-item" href="index.html#gas">Ahorra gas</a>
+                  <a class="dropdown-item" href="#what-we-do">¿Qué hacemos?</a>
+                  <a class="dropdown-item" href="#energy">Ahorra energía</a>
+                  <a class="dropdown-item" href="#gas">Ahorra gas</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#products">
+                <a class="nav-link" href="#products">
                   Productos
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#testimonial">
+                <a class="nav-link" href="#testimonial">
                   Garantías
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#steps">
+                <a class="nav-link" href="#steps">
                   Pasos
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html#testimonial">
+                <a class="nav-link" href="#testimonial">
                   Testimonios
                 </a>
               </li>
@@ -79,7 +83,7 @@
               </li>
             </ul>
             <div class="btn-sing float-right">
-              <a class="btn btn-border" href="#feature">
+              <a class="btn btn-border" href="faq.html">
                 Preguntas y respuestas
               </a>
             </div>
@@ -537,41 +541,41 @@
         <div class="row">
           <div class="col-12">
             <div class="section-header text-center">
-              <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
+              <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Contactanos</h2>
             </div>
           </div>
         </div>
         <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
           <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-block">
-              <h2>Contact Form</h2>
-              <form id="contactForm">
+              <form id="contactForm" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Introduce tu nombre">
                       <div class="help-block with-errors"></div>
                     </div>                                 
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Escribe tu correo para contestarte">
                       <div class="help-block with-errors"></div>
                     </div> 
                   </div>
                    <div class="col-md-12">
                     <div class="form-group">
-                      <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                      <label for="file_upload">Recibo de luz</label>
+                      <input type="file" placeholder="Subject" id="file_upload" class="form-control" required data-error="Sube tu último recibo de luz">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group"> 
-                      <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                      <textarea class="form-control" id="message" placeholder="Mensaje" rows="5" data-error="Escríbenos algo" required></textarea>
                       <div class="help-block with-errors"></div>
                     </div>
                     <div class="submit-button">
-                      <button class="btn btn-common" id="form-submit" type="submit">Send Message</button>
+                      <button class="btn btn-common" id="form-submit" type="submit"><i class="lni-rocket"></i> Enviar</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div> 
                       <div class="clearfix"></div> 
                     </div>
@@ -582,27 +586,27 @@
           </div>
           <div class="col-md-6 col-lg-6 col-sm-12">
             <div class="contact-right-area wow fadeIn">
-              <h2>Get In Touch</h2>
+              <h2>Estamos para servirte</h2>
               <div class="contact-right">
                 <div class="single-contact">
                   <div class="contact-icon">
                     <i class="lni-map-marker"></i>
                   </div>
-                  <p>Skopje, Macedonia</p>
+                  <p>Cd. de México, México</p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon">
                     <i class="lni-envelope"></i>
                   </div>
-                  <p><a href="#">email@gmail.com</a></p>
-                  <p><a href="#">tomsaulnier@gmail.com</a></p>
+                  <p><a href="#">mario.energiarenovable@gmail.com</a></p>
+                  <p><a href="#">cesar.energiarenovable@gmail.com</a></p>
                 </div>
                 <div class="single-contact">
                   <div class="contact-icon">
                     <i class="lni-phone-handset"></i>
                   </div>
-                  <p><a href="#">+42 374 5967</a></p>
-                  <p><a href="#">+99 123 5967</a></p>
+                  <p><a href="#">+52 55 5555 5555</a></p>
+                  <p><a href="#">+52 55 5555 5555</a></p>
                 </div>
               </div>
             </div>

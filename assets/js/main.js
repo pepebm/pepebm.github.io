@@ -132,6 +132,11 @@
           e.preventDefault();
       });
 
+      $('#collapse-btn').on('click', function (e) {
+        var $this = $(this);
+        $this.toggleClass('SeeMore2');
+        $this.hasClass('SeeMore2') ? $this.text('Leer más') : $this.text('Leer menos');
+      });
   });      
 
 }(jQuery));
