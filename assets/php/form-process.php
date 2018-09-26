@@ -1,55 +1,77 @@
 <?php
-    # Include the Autoloader (see "Libraries" for install instructions)
-    require 'vendor/autoload.php';
-    use Mailgun\Mailgun;
+    require 'PHPMailer.php';
+    require 'Exception.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
     $errorMSG = "";
 
     // NAME
     if (empty($_POST["name"])) {
-        $errorMSG = "Name is required ";
+        $errorMSG = "Name is required \n";
     } else {
         $name = $_POST["name"];
     }
 
     // EMAIL
     if (empty($_POST["email"])) {
-        $errorMSG .= "Email is required ";
+        $errorMSG .= "Email is required \n";
     } else {
         $email = $_POST["email"];
     }
 
-    // File
-    if (empty($_POST["file_upload"])) {
-        $errorMSG .= "Subject is required ";
+    // File 1
+    if (empty($_POST["file_upload_front"])) {
+        $errorMSG .= "Front file is required \n";
     } else {
-        $file_upload = $_POST["file_upload"];
+        $file_upload_front = $_POST["file_upload_front"];
     }
 
-    // MESSAGE
-    if (empty($_POST["message"])) {
-        $errorMSG .= "Message is required ";
+    // File 2
+    if (empty($_POST["file_upload_back"])) {
+        $errorMSG .= "Back file is required \n";
     } else {
-        $message = $_POST["message"];
+        $file_upload_back = $_POST["file_upload_back"];
     }
 
-    # Instantiate the client.
-    $mgClient = new Mailgun('b371525014bd88b72ba010582ff1d3a3-b0aac6d0-2b41ea2e');
-    $domain = "sandbox8e7cce5697b2436490e272e79da1dd07.mailgun.org";
+    // Address
+    if (empty($_POST["address"])) {
+        $errorMSG .= "Address is required \n";
+    } else {
+        $address = $_POST["address"];
+    }
 
-    # Make the call to the client.
-    $result = $mgClient->sendMessage("$domain",
-            array('from'       => 'Nuevo cliente potencial' . $from,
-                    'to'         => 'Energias renovables <mario.energiarenovable@gmail.com>',
-                    'subject'    => 'Página web',
-                    'text'       => $name . " está interesado en nuestro servicio.\n Mensaje del cliente\n" . $message,
-                    'attachment' => [
-                        ['fileContent' => $file_upload]
-                    ]
-                ));
+    if ($errorMSG == "") {
+        $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+        try {
+            $sender = 'energias.renovables.pagina@gmail.com';
+            //Server settings
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = $sender;                            // SMTP username
+            $mail->Password = 'energiarenovable1';                // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption
+            $mail->Port = 587;                                    // TCP port to connect to
 
-    // redirect to success page
-    if ($result && $errorMSG == "") {
-        echo "success";
+            //Recipients
+            $mail->setFrom($sender, 'Mailer');
+            $mail->addAddress('jm.beauregard26@gmail.com');      // Add a recipient
+            //Attachments
+            $mail->addAttachment($file_upload_front);             // Add attachments
+            $mail->addAttachment($file_upload_back);              // Optional name
+
+            //Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = 'Cliente potencial';
+            $mail->Body    = "Nombre: $name\nCorreo: $email\nDirección: $address";
+
+            $mail->send();
+            echo 'Message has been sent';
+        } catch (Exception $e) {
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        }
     } else {
         if($errorMSG == ""){
             echo "Something went wrong :(";

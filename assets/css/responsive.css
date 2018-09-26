@@ -12,6 +12,10 @@
   .why .content h3 {
     font-size: 30px;
   }
+  .navbar-brand img {
+    width: 55px !important;
+    margin-top: 0;
+  }
 }
 
 /* tablets */
